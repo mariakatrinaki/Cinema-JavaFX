@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="541.0" prefWidth="1219.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CleanHallsSeatsEmployeeController">
+   <children>
+      <Label alignment="CENTER" layoutX="64.0" layoutY="42.0" prefHeight="17.0" prefWidth="101.0" text="Αίθουσες" textFill="#1e1e1e">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="381.0" layoutY="57.0" prefHeight="17.0" prefWidth="101.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="choiceBoxHall" layoutX="15.0" layoutY="89.0" prefHeight="25.0" prefWidth="198.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ChoiceBox>
+      <Label layoutX="324.0" layoutY="42.0" prefHeight="30.0" prefWidth="146.0" text="Σε χρήση" textFill="#1e1d1d">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldUse" layoutX="248.0" layoutY="91.0" prefHeight="21.0" prefWidth="279.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></TextField>
+      <TextField fx:id="textFieldObjects" editable="false" layoutX="860.0" layoutY="90.0" prefHeight="30.0" prefWidth="362.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></TextField>
+      <Label layoutX="867.0" layoutY="42.0" prefHeight="30.0" prefWidth="348.0" text="Ανιχνεύτηκαν αντικείμενα / Θέση" textFill="#222121">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelToggleRobot" layoutX="669.0" layoutY="91.0" prefHeight="25.0" prefWidth="70.0" text="Label">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Label>
+      <Label layoutX="577.0" layoutY="42.0" prefHeight="30.0" prefWidth="255.0" text="Αυτόματη Καθαριότητα" textFill="#1b1a1a">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageView" fitHeight="140.0" fitWidth="139.0" layoutX="14.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../robotCleaner.png" />
+         </image>
+      </ImageView>
+      <Circle fx:id="firstCircle" fill="WHITE" layoutX="108.0" layoutY="386.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="secondCircle" fill="WHITE" layoutX="144.0" layoutY="346.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="thirdCircle" fill="WHITE" layoutX="172.0" layoutY="312.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="fourthCircle" fill="WHITE" layoutX="196.0" layoutY="278.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="robotSpeak" layoutX="234.0" layoutY="179.0" prefHeight="26.0" prefWidth="536.0" text="blabla">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageGarbageBottle" fitHeight="54.0" fitWidth="193.0" layoutX="324.0" layoutY="458.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../garbageBottle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageGarbageCan" fitHeight="69.0" fitWidth="93.0" layoutX="481.0" layoutY="451.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../garbageCan.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageGarbagePaper" fitHeight="54.0" fitWidth="93.0" layoutX="632.0" layoutY="458.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../garbagePaper.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageGarbagePhone" fitHeight="68.0" fitWidth="93.0" layoutX="807.0" layoutY="458.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../garbagePhone.png" />
+         </image>
+      </ImageView>
+      <Circle fx:id="fifthCircle" fill="WHITE" layoutX="220.0" layoutY="247.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+   <styleClass>
+      <String fx:value="styleClass=&quot;cinema&quot;" />
+      <String fx:value="cinema" />
+   </styleClass>
+</AnchorPane>

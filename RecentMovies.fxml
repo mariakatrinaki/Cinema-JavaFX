@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="box" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="185.0" prefWidth="254.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RecentMoviesController">
+   <children>
+      <Button fx:id="btnMovie" mnemonicParsing="false" prefHeight="146.0" prefWidth="104.0">
+         <graphic>
+            <ImageView fx:id="imageCruella" fitHeight="150.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../cruella.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <VBox alignment="CENTER" prefHeight="149.0" prefWidth="100.0" stylesheets="@application.css">
+         <HBox.margin>
+            <Insets bottom="5.0" left="10.0" top="5.0" />
+         </HBox.margin>
+         <children>
+            <Label fx:id="movieName" alignment="CENTER" text="Cruella" textFill="#eb0505">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="movieDirector" text="Craig&#10;Gillespie">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets left="20.0" />
+   </padding>
+</HBox>

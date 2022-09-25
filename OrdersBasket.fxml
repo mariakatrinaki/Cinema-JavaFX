@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.OrdersBasketController">
+   <children>
+      <Label fx:id="labelOrders" alignment="CENTER" layoutX="48.0" layoutY="43.0" prefHeight="17.0" prefWidth="511.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="48.0" layoutY="80.0" prefHeight="17.0" prefWidth="200.0" text="Παραγγελίες">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="537.0" layoutY="6.0" mnemonicParsing="false" onAction="#handleCloseButton" prefHeight="27.0" prefWidth="56.0" styleClass="button1" stylesheets="@application.css">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="closeBtn" fitHeight="21.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../closeButton.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <ListView fx:id="myListViewFoods" layoutX="30.0" layoutY="131.0" opacity="0.76" prefHeight="327.0" prefWidth="291.0" />
+      <Label fx:id="orderComplete" alignment="CENTER" layoutX="19.0" layoutY="465.0" prefHeight="17.0" prefWidth="562.0" text="mmm">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="textAreaOrder" editable="false" layoutX="349.0" layoutY="131.0" opacity="0.76" prefHeight="327.0" prefWidth="244.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextArea>
+      <Label alignment="CENTER" layoutX="354.0" layoutY="80.0" prefHeight="17.0" prefWidth="221.0" text="Πληροφορίες Παραγγελίας">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+   <styleClass>
+      <String fx:value="styleClass=&quot;cinema&quot;" />
+      <String fx:value="cinema" />
+   </styleClass>
+</AnchorPane>

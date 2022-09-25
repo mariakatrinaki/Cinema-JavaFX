@@ -1,0 +1,48 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+
+.anchor{
+	
+	-fx-background-image:url('file:/C:/Users/MARIA/eclipse-workspace/TutorialJavaFx/src/cinemaBar.jpg');
+     
+     
+  }	
+	
+.cinema{
+	-fx-background-image:url('file:/C:/Users/MARIA/eclipse-workspace/TutorialJavaFx/src/cleanSeat.png');
+	
+}
+
+.mov1 {
+  -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+  -fx-scale-y: 0.90;
+  -fx-scale-y: 0.90;
+  
+}
+
+.mov1:hover {
+   -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+  -fx-scale-y: 1.3;
+}
+
+.button1{
+	-fx-background-color : #239c9c;
+	-fx-background-radius: 30 0 0 30;
+}
+
+.button1:hover{
+	-fx-background-color : #07f7f7;
+	-fx-background-radius: 30 0 0 30;
+}
+
+.button1:pressed{
+	-fx-background-color : #239c9c;
+	-fx-background-radius: 30 0 0 30;
+}
+

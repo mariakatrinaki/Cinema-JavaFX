@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="1300.0" style="-fx-background-color: #BABABA;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EmployeeHomePageController">
+   <children>
+      <Button layoutX="1255.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleCloseButton" styleClass="button1" stylesheets="@application.css" AnchorPane.rightAnchor="6.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../closeButton.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="1195.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleMinButton" prefHeight="31.0" prefWidth="43.0" styleClass="button1" stylesheets="@application.css" AnchorPane.rightAnchor="62.0">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../minimizeBtn.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <padding>
+            <Insets bottom="6.0" />
+         </padding>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <BorderPane fx:id="mainWindow" layoutX="28.0" layoutY="85.0" prefHeight="519.0" prefWidth="1226.0" style="-fx-background-color: #C1B9E2;" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="46.0">
+         <top>
+            <HBox prefHeight="93.0" prefWidth="1216.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button graphicTextGap="0.0" mnemonicParsing="false" onAction="#handleHomeButton" opacity="0.76" prefHeight="49.0" prefWidth="232.0" styleClass="button1" stylesheets="@application.css" text="Εκτέλεση Παραγγελιών">
+                     <HBox.margin>
+                        <Insets left="25.0" top="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button graphicTextGap="0.0" layoutX="61.0" layoutY="41.0" mnemonicParsing="false" onAction="#handleCheckTicketsButton" opacity="0.76" prefHeight="52.0" prefWidth="232.0" styleClass="button1" stylesheets="@application.css" text="Έλεγχος Εισιτηρίων">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="80.0" top="20.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button graphicTextGap="0.0" layoutX="362.0" layoutY="41.0" mnemonicParsing="false" onAction="#handleDevicesButton" opacity="0.76" prefHeight="55.0" prefWidth="232.0" styleClass="button1" stylesheets="@application.css" text="Διαχείρηση Συσκευών" textFill="#141414">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="80.0" top="20.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button graphicTextGap="0.0" layoutX="601.0" layoutY="41.0" mnemonicParsing="false" onAction="#handleCleanHallSeatstButton" opacity="0.76" prefHeight="59.0" prefWidth="232.0" styleClass="button1" stylesheets="@application.css" text="Διαχείρηση Ρομπότ" textFill="#111111">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="80.0" top="20.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" />
+               </BorderPane.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+         </top>
+         <center>
+            <AnchorPane fx:id="homeScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="541.0" prefWidth="1219.0" stylesheets="@application.css" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" />
+               </BorderPane.margin>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+               <children>
+                  <Label alignment="CENTER" layoutX="381.0" layoutY="45.0" prefHeight="31.0" prefWidth="217.0" text="Θέσεις" textFill="#1e1d1d">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="933.0" layoutY="30.0" prefHeight="17.0" prefWidth="184.0" text="Προϊόντα" textFill="#141414">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="choiceBoxSeat" layoutX="404.0" layoutY="85.0" prefHeight="25.0" prefWidth="194.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></ChoiceBox>
+                  <TextArea fx:id="TextAreaProducts" editable="false" layoutX="901.0" layoutY="74.0" prefHeight="297.0" prefWidth="271.0">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </TextArea>
+                  <Label alignment="CENTER" layoutY="45.0" prefHeight="31.0" prefWidth="217.0" text="Αίθουσες" textFill="#1e1e1e">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="choiceBoxHall" layoutX="24.0" layoutY="85.0" prefHeight="25.0" prefWidth="194.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></ChoiceBox>
+                  <Button layoutX="989.0" layoutY="472.0" mnemonicParsing="false" onAction="#confirmOrder" prefHeight="32.0" prefWidth="197.0" styleClass="button1" stylesheets="@application.css" text="Εκτέλεση Παραγγελίας">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label fx:id="statusOrder" alignment="TOP_LEFT" layoutX="230.0" layoutY="145.0" prefHeight="18.0" prefWidth="665.0" text="blablabla" textFill="#222121">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imageViewEmployee" fitHeight="232.0" fitWidth="200.0" layoutX="90.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imageEmployee.png" />
+                     </image>
+                  </ImageView>
+                  <Circle fx:id="firstCircle" fill="#f2f2f2" layoutX="129.0" layoutY="253.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="secondCircle" fill="#f2f2f2" layoutX="147.0" layoutY="222.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="thirdCircle" fill="#f2f2f2" layoutX="176.0" layoutY="186.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+               <styleClass>
+                  <String fx:value="styleClass=&quot;cinema&quot;" />
+                  <String fx:value="cinema" />
+               </styleClass>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ConfirmationBoxTicketReservationController">
+   <children>
+      <TextArea fx:id="textAreaConfirmTickets" editable="false" layoutX="146.0" layoutY="60.0" prefHeight="247.0" prefWidth="343.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextArea>
+      <Label fx:id="taskStatus" alignment="CENTER" layoutX="78.0" layoutY="357.0" prefHeight="17.0" prefWidth="412.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="boxTitleTicket" alignment="CENTER" layoutX="74.0" layoutY="28.0" prefHeight="17.0" prefWidth="412.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <ProgressBar fx:id="progressCheckTicket" layoutX="145.0" layoutY="323.0" prefHeight="21.0" prefWidth="302.0" progress="0.0" />
+      <ProgressIndicator fx:id="progressIndicator" layoutX="463.0" layoutY="324.0" prefWidth="27.0" progress="0.0" />
+   </children>
+   <styleClass>
+      <String fx:value="styleClass=&quot;cinema&quot;" />
+      <String fx:value="cinema" />
+   </styleClass>
+</AnchorPane>

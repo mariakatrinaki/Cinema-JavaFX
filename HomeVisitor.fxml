@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="1300.0" style="-fx-background-color: #BABABA;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomeController">
+   <children>
+      <BorderPane fx:id="mainWindow" layoutX="48.0" layoutY="87.0" prefHeight="558.0" prefWidth="1226.0" style="-fx-background-color: #C1B9E2;" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="30.0">
+         <top>
+            <HBox prefHeight="83.0" prefWidth="1194.0" spacing="150.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button onAction="#handleHomeButton" opacity="0.76" prefHeight="49.0" prefWidth="232.0" styleClass="button1" stylesheets="@application.css" text="Αρχική">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button onAction="#handleMovieButton" opacity="0.76" prefHeight="49.0" prefWidth="232.0" styleClass="button1" stylesheets="@application.css" text="Επιλογή Ταινίας">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button onAction="#handleOrdersVisitor" opacity="0.76" prefHeight="49.0" prefWidth="232.0" styleClass="button1" stylesheets="@application.css" text="Παραγγελίες Μπάρ" textFill="#252424">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="50.0" right="50.0" top="20.0" />
+               </padding>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" top="5.0" />
+               </BorderPane.margin>
+            </HBox>
+         </top>
+         <padding>
+            <Insets bottom="60.0" left="10.0" right="10.0" />
+         </padding>
+         <center>
+            <AnchorPane fx:id="homeScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="541.0" prefWidth="1219.0" stylesheets="@application.css" BorderPane.alignment="CENTER">
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" />
+               </BorderPane.margin>
+               <children>
+                  <Pane layoutX="14.0" layoutY="95.0" prefHeight="351.0" prefWidth="561.0" style="-fx-background-color: #4B0082;">
+                     <children>
+                        <ImageView fx:id="imageViewHomeVisitor" blendMode="SCREEN" cache="true" fitHeight="340.0" fitWidth="553.0" layoutX="4.0" layoutY="6.0" pickOnBounds="true" smooth="false">
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                           <image>
+                              <Image url="@../cinema1.jpg" />
+                           </image>
+                        </ImageView>
+                        <Circle fx:id="picOne" fill="DODGERBLUE" layoutX="41.0" layoutY="311.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="picTwo" fill="DODGERBLUE" layoutX="103.0" layoutY="311.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="picThree" fill="DODGERBLUE" layoutX="158.0" layoutY="311.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="picFour" fill="DODGERBLUE" layoutX="206.0" layoutY="311.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="picFive" fill="DODGERBLUE" layoutX="261.0" layoutY="311.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="picSix" fill="DODGERBLUE" layoutX="322.0" layoutY="311.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="picSeven" fill="DODGERBLUE" layoutX="389.0" layoutY="311.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Label fx:id="labelToggle" layoutX="485.0" layoutY="323.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="66.0" text="Label" />
+                        <Button fx:id="btnPrevious" layoutY="114.0" mnemonicParsing="false" onAction="#btnPreviousImage" prefHeight="117.0" prefWidth="29.0" text="&lt;" />
+                        <Button fx:id="btnNext" layoutX="527.0" layoutY="105.0" mnemonicParsing="false" onAction="#btnNextImage" prefHeight="119.0" prefWidth="24.0" text="&gt;">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <TextArea fx:id="textArea" editable="false" layoutX="641.0" layoutY="94.0" opacity="0.63" prefHeight="353.0" prefWidth="525.0" text="blabla" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </TextArea>
+                  <Label fx:id="labelAnimation" layoutX="387.0" layoutY="22.0" opacity="0.0" prefHeight="17.0" prefWidth="388.0">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelTitle" layoutX="687.0" layoutY="75.0" prefHeight="19.0" prefWidth="488.0" text="blabla">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="styleClass=&quot;cinema&quot;" />
+                  <String fx:value="cinema" />
+               </styleClass>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+      <HBox alignment="TOP_RIGHT" layoutX="2.0" prefHeight="31.0" prefWidth="1308.0" spacing="5.0" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="-5.0">
+         <children>
+            <Button onAction="#handleMinButton" prefHeight="11.0" prefWidth="51.0" styleClass="button1" stylesheets="@application.css">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../minimizeBtn.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button onAction="#handleCloseButton" prefHeight="26.0" prefWidth="47.0" styleClass="button1" stylesheets="@application.css">
+               <HBox.margin>
+                  <Insets bottom="5.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../closeButton.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="4.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</AnchorPane>

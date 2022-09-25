@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="850.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ReservationMovieController">
+   <children>
+      <Label fx:id="labelStatus" alignment="CENTER" layoutX="163.0" layoutY="20.0" prefHeight="17.0" prefWidth="294.0" text="Επιλογή Θέσεων">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="thirdSeat" layoutX="391.0" layoutY="79.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="87.0" style="-fx-background-color: white;">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="imageThirdSeat" fitHeight="56.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../cinemaSeat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="secondSeat" layoutX="236.0" layoutY="77.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="89.0" style="-fx-background-color: white;">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="imageSecondSeat" fitHeight="50.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../cinemaSeat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="fourthSeat" layoutX="560.0" layoutY="79.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="89.0" style="-fx-background-color: white;">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="imageFourthSeat" fitHeight="50.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../cinemaSeat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="firstSeat" layoutX="73.0" layoutY="79.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="71.0" style="-fx-background-color: white;">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="imageFirstSeat" fitHeight="76.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../cinemaSeat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="fiveSeat" layoutX="73.0" layoutY="201.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="71.0" style="-fx-background-color: white;">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="imageFiveSeat" fitHeight="49.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../cinemaSeat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="sixSeat" layoutX="241.0" layoutY="201.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="71.0" style="-fx-background-color: white;">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="imageSixSeat" fitHeight="49.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../cinemaSeat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="sevenSeat" layoutX="382.0" layoutY="201.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="71.0" style="-fx-background-color: white;">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="imageSevenSeat" fitHeight="49.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../cinemaSeat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="eightSeat" layoutX="561.0" layoutY="201.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="71.0" style="-fx-background-color: white;">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="imageEightSeat" fitHeight="51.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../cinemaSeat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="nineSeat" layoutX="73.0" layoutY="309.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="59.0" prefWidth="87.0" style="-fx-background-color: white;">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="imageNineSeat" fitHeight="48.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../cinemaSeat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="tenSeat" layoutX="249.0" layoutY="300.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="71.0" style="-fx-background-color: white;">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="imageTenSeat" fitHeight="51.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../cinemaSeat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="elevenSeat" layoutX="381.0" layoutY="300.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="71.0" style="-fx-background-color: white;">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="imageElevenSeat" fitHeight="61.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../cinemaSeat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="twelveSeat" layoutX="561.0" layoutY="310.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="71.0" style="-fx-background-color: white;" stylesheets="@application.css">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="imageTwelveSeat" fitHeight="49.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../cinemaSeat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnPurchaseTicket" layoutX="702.0" layoutY="442.0" mnemonicParsing="false" onAction="#purchaseTicket" styleClass="button1" stylesheets="@application.css" text="Αγορά Εισητηρίου">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="labelStatus" layoutX="10.0" layoutY="412.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.58" prefHeight="30.0" prefWidth="830.0" style="-fx-background-color: #FCC6E2;" text="Επιλέξτε θέση:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label fx:id="labelFirst" alignment="CENTER" layoutX="77.0" layoutY="146.0" prefHeight="17.0" prefWidth="89.0" text="Θέση 1">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelSecond" alignment="CENTER" layoutX="240.0" layoutY="146.0" prefHeight="17.0" prefWidth="89.0" text="Θέση 2">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelThird" alignment="CENTER" layoutX="391.0" layoutY="146.0" prefHeight="17.0" prefWidth="89.0" text="Θέση 3">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelFourth" alignment="CENTER" layoutX="560.0" layoutY="146.0" prefHeight="17.0" prefWidth="89.0" text="Θέση 4">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelFive" alignment="CENTER" layoutX="72.0" layoutY="271.0" prefHeight="17.0" prefWidth="89.0" text="Θέση 5">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelSix" alignment="CENTER" layoutX="240.0" layoutY="271.0" prefHeight="17.0" prefWidth="89.0" text="Θέση 6">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelSeven" alignment="CENTER" layoutX="381.0" layoutY="271.0" prefHeight="17.0" prefWidth="89.0" text="Θέση 7">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelEight" alignment="CENTER" layoutX="560.0" layoutY="271.0" prefHeight="17.0" prefWidth="89.0" text="Θέση 8">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelNine" alignment="CENTER" layoutX="72.0" layoutY="377.0" prefHeight="17.0" prefWidth="89.0" text="Θέση 9">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelTen" alignment="CENTER" layoutX="248.0" layoutY="377.0" prefHeight="17.0" prefWidth="89.0" text="Θέση 10">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelEleven" alignment="CENTER" layoutX="391.0" layoutY="377.0" prefHeight="17.0" prefWidth="89.0" text="Θέση 11">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelTwelve" alignment="CENTER" layoutX="561.0" layoutY="377.0" prefHeight="17.0" prefWidth="89.0" text="Θέση 12">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+   <styleClass>
+      <String fx:value="styleClass=&quot;cinema&quot;" />
+      <String fx:value="cinema" />
+   </styleClass>
+</AnchorPane>
