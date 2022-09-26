@@ -2,7 +2,9 @@
 Cinema-Complex  a management system of multi-site cinemas halls
 <br>
 https://github.com/mariakatrinaki/Cinema-JavaFX/files/9641399/-Cinema-Complex.pdf
+<br>
 Screenshots
+<br>
 ![1Εικόνα logIn-USER](https://user-images.githubusercontent.com/81016499/192289188-b09847de-8b8b-4282-bc58-8f6e44ba9feb.png)
 ![2Εικόνα logIn-Invalid Data](https://user-images.githubusercontent.com/81016499/192289190-e1d8b1c5-5f8e-4225-bb8e-d652aae4499f.png)
 ![Εικόνα 1 σύνδεση σαν επισκέπτης](https://user-images.githubusercontent.com/81016499/192289193-e886eddf-5165-4405-8a47-1349666debcc.png)
